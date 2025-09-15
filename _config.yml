@@ -1,0 +1,42 @@
+# GitHub Pages Configuration
+title: Figma Analytics - Generador de CSV
+description: Interfaz visual para generar reportes CSV desde la API de Figma Analytics
+author: Harold
+baseurl: "/prj-metriccs-figma-api"
+url: "https://bricksds.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - README_GH_PAGES.md
+  - requirements.txt
+  - app.py
+  - config.py
+  - run_web_app.py
+  - templates/
+  - .github/
+  - .gitignore
+
+# Include files
+include:
+  - _config.yml
+  - index.html
+
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
